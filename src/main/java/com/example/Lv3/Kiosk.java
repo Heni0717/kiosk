@@ -10,11 +10,8 @@ public class Kiosk {
     List<MenuItem> menuItems =new ArrayList<>();
 
     // MenuItem을 받을 생성자
-    public Kiosk(){
-        menuItems.add(new MenuItem("햄버거", 1.0,"첫번째 햄버거"));
-        menuItems.add(new MenuItem("햄버거2", 1.1,"두번째 햄버거"));
-        menuItems.add(new MenuItem("햄버거3", 1.2,"세번째 햄버거"));
-        menuItems.add(new MenuItem("햄버거4", 1.3,"네번째 햄버거"));
+    public Kiosk(List<MenuItem> _menuItems){
+        this.menuItems=_menuItems;
     }
 
     Scanner sc = new Scanner(System.in);
@@ -41,18 +38,20 @@ public class Kiosk {
                 break;
             }
             // 입력된 숫자에 따른 처리 - 선택한 메뉴 : 이름, 가격, 설명
+            //  -> toString을 사용하지 않기로 결정, 본인 편의상,, 이름만 호출
+            //  => 아래 이름을 불러오는 방식처럼 가격과 설명도 가져올수 있음.
             switch (input){
                 case 1:
-                    System.out.println("선택한 메뉴: "+menuItems.get(0));
+                    System.out.println("선택한 메뉴: "+menuItems.get(0).name);
                     break;
                 case 2:
-                    System.out.println("선택한 메뉴: "+menuItems.get(1));
+                    System.out.println("선택한 메뉴: "+menuItems.get(1).name);
                     break;
                 case 3:
-                    System.out.println("선택한 메뉴: "+menuItems.get(2));
+                    System.out.println("선택한 메뉴: "+menuItems.get(2).name);
                     break;
                 case 4:
-                    System.out.println("선택한 메뉴: "+menuItems.get(3));
+                    System.out.println("선택한 메뉴: "+menuItems.get(3).name);
                     break;
                 default:
                     System.out.println("번호 입력 오류");
