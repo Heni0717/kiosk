@@ -11,9 +11,9 @@ public class Main {
         // Menu 클래스 내 있는 List<MenuItem> 에 MenuItem 객체 생성하면서 삽입
         List<MenuItem> burgerMenuItemList = new ArrayList<>(List.of(
            new MenuItem("햄버거1", 1.0, "첫번째 햄버거.."),
-                new MenuItem("햄버거2", 1.1, "두번째 햄버거.."),
-                new MenuItem("햄버거3", 1.2, "세번째 햄버거.."),
-                new MenuItem("햄버거4", 1.3, "네번째 햄버거..")
+            new MenuItem("햄버거2", 1.1, "두번째 햄버거.."),
+            new MenuItem("햄버거3", 1.2, "세번째 햄버거.."),
+            new MenuItem("햄버거4", 1.3, "네번째 햄버거..")
         ));
 
         // Menu 객체 생성, MenuList 초기화 후 값 할당..,?

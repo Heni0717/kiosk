@@ -8,6 +8,7 @@ import java.util.List;
 public class Menu {
 
     String menuList;
+    List<MenuItem> menuItems = new ArrayList<>();
 
     public Menu(String menuList) {
         this.menuList = menuList;
@@ -20,7 +21,6 @@ public class Menu {
     }
 
     // MenuItem 클래스를 List로 관리
-    List<MenuItem> menuItems = new ArrayList<>();
     public void setMenuItems(List<MenuItem> _menuItems){
         this.menuItems = _menuItems;
     }
