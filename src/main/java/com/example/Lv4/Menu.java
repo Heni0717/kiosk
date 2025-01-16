@@ -36,7 +36,7 @@ public class Menu {
             MenuItem menu = menuItems.get(i);
             System.out.println((i + 1) + ". " + menu.name + " | W " + menu.price + " | " + menu.description);
         }
-        System.out.println("0. 종료");
+        System.out.println("0. 돌아가기");
     }
 
 }
