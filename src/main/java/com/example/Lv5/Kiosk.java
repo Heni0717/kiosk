@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Kiosk {
     // 카테고리  리스트
     private List<Menu> menuList;
+    private Scanner sc = new Scanner(System.in);
 
     // main()함수에서 Kiosk를 객체화 시킬 생성자
     public Kiosk(List<Menu> _menuList) {
@@ -15,7 +16,6 @@ public class Kiosk {
 
     // Kiosk의 역할을 수행할 시작 함수
     public void start() {
-        Scanner sc = new Scanner(System.in);
 
         // 입/출력 반복
         while (true) {
@@ -29,7 +29,7 @@ public class Kiosk {
 
             // 숫자 입력 받기 - 카테고리 선택 (0 입력시 종료)
             System.out.println("카테고리 선택: ");
-            int categorySelect = getInputException(0, menuList.size(), sc);
+            int categorySelect = getInputException("카테고리", menuList.size());
             if (categorySelect == 0) {
                 System.out.println("프로그램 종료");
                 break;
@@ -43,7 +43,7 @@ public class Kiosk {
 
                 // 숫자 입력 받기 - 메뉴 선택
                 System.out.println("메뉴 선택: ");
-                int itemSelect = getInputException(0, menu.getMenuItems().size(), sc);
+                int itemSelect = getInputException("메뉴", menu.getMenuItems().size());
 
                 if (itemSelect == 0) {
                     System.out.println("메인 메뉴로 돌아갑니다.\n");
@@ -58,15 +58,16 @@ public class Kiosk {
     }
 
     // 사용자 입력 예외 처리
-    private int getInputException(int min, int max, Scanner sc) {
-        int input = -1;
+    private int getInputException(String subject, int max) {
+        int input = sc.nextInt();;
         while (true) {
+
             try {
-                input = sc.nextInt();
-                if (input >= min && input <= max) {
+                if (input >= 0 && input <= max) {
                     break;
                 } else {
-                    System.out.println("잘못된 입력입니다.");
+                    System.out.println("잘못된 "+subject+"입력입니다.");
+                    break;
                 }
             } catch (Exception e) {
                 System.out.println("잘못된 입력입니다. 숫자를 입력하세요.");
