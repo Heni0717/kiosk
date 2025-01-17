@@ -7,12 +7,10 @@ import java.util.List;
 // 버거, 음료 등 각 카테고리 내에 여러 MenuItem 포함
 public class Menu {
 
-    // 필드 : 카테고리, 메뉴 아이템(리스트로 관리)
-    // 캡슐화
+    // 필드 : 카테고리, 메뉴 아이템(리스트로 관리) -> 캡슐화
     private String category;
     private List<MenuItem> menuItems = new ArrayList<>();
 
-    // main()메소드에서 Menu를 객체화시킬 생성자
     public Menu(String _category) {
         this.category = _category;
     }
@@ -25,10 +23,8 @@ public class Menu {
     public List<MenuItem> getMenuItems(){
         return menuItems;
     }
-    // List에 들어있는 MenuItem을 순차적으로 보여줌
     public void getMenuItemsList(){
         System.out.println("[ "+category+" MENU ]");
-        // 반복문을 활용해 List 안에 있는 MenuItem을 하나씩 출력
         for(int i=0; i<menuItems.size(); i++){
             MenuItem menuItem = menuItems.get(i);
             System.out.println((i + 1) + ". " + menuItem.getName() + " | W " + menuItem.getPrice() + " | " + menuItem.getDescription());

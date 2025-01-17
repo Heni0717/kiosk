@@ -40,9 +40,7 @@ public class Main {
         drinkMenu.setMenuItems(drinkMenuItemList);
         dessertMenu.setMenuItems(dessertMenuItemList);
 
-        // Kiosk 객체 생성
         Kiosk kiosk = new Kiosk(menuList);
-        // 클래스의 반복 로직 시작(시작함수 호출)
         kiosk.start();
 
     }

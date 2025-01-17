@@ -7,7 +7,6 @@ public class MenuItem {
     double price;
     String description;
 
-    // 인스턴스화 시킬 생성자
     public MenuItem(String name, double price, String description){
         this.name=name;
         this.price=price;
@@ -16,7 +15,7 @@ public class MenuItem {
 
 
     // main() 코드 수정으로 인해 사용하지 않기로 결정
-//    //getter를 사용하지 않고 main에서 list 내용을 출력하기 위해 임시 .. 사용..
+//    getter를 사용하지 않고 main에서 list 내용을 출력하기 위해 임시 .. 사용..
 //    @Override
 //    public String toString() {
 //       return name + " | W " + price + " | " + description;

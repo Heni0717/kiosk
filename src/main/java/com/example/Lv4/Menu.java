@@ -11,20 +11,19 @@ public class Menu {
     String category;
     List<MenuItem> menuItems = new ArrayList<>();
 
-    // main()메소드에서 Menu를 객체화시킬 생성자
     public Menu(String _category) {
         this.category = _category;
     }
 
 
-    // getter - 카테고리, 메뉴 아이템 리스트 (Kiosk 클래스에서 사용)
+    // getter
     public String getCategory(){
         return category;
     }
     public List<MenuItem> getMenuItems(){
         return menuItems;
     }
-    // List에 들어있는 MenuItem을 순차적으로 보여줌
+
     public void getMenuItemsList(){
         System.out.println("[ "+category+" MENU ]");
         // 반복문을 활용해 List 안에 있는 MenuItem을 하나씩 출력

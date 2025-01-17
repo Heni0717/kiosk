@@ -5,10 +5,9 @@ import java.util.Scanner;
 
 
 public class Kiosk {
-    // 카테고리  리스트
+
     List<Menu> menuList;
 
-    // main()함수에서 Kiosk를 객체화 시킬 생성자
     public Kiosk(List<Menu> _menuList) {
         this.menuList = _menuList;
     }
@@ -17,9 +16,8 @@ public class Kiosk {
     public void start() {
         Scanner sc = new Scanner(System.in);
 
-        // 입/출력 반복
         while (true) {
-            // 상위 카테고리 출력하는 반복문
+            // 상위 카테고리 출력 -> 입력 (0 입력시 종료)
             System.out.println("[ MAIN MENU ]");
             for (int i = 0; i < menuList.size(); i++) {
                 Menu menus = menuList.get(i);
@@ -27,7 +25,6 @@ public class Kiosk {
             }
             System.out.println("0. 종료");
 
-            // 숫자 입력 받기 - 카테고리 선택 (0 입력시 종료)
             System.out.println("카테고리 선택: ");
             int categorySelect = getInputException(0, menuList.size(), sc);
             if (categorySelect == 0) {
@@ -35,16 +32,12 @@ public class Kiosk {
                 break;
             }
 
-            // 카테고리 선택시 -> 메뉴 선택 (0 입력시 뒤로가기)
+            // 메뉴 출력 -> 입력 (0 입력시 뒤로가기)
             Menu menu = menuList.get(categorySelect - 1);
             while (true) {
-                // 메뉴 아이템 리스트 출력
                 menu.getMenuItemsList();
-
-                // 숫자 입력 받기 - 메뉴 선택
                 System.out.println("메뉴 선택: ");
                 int itemSelect = getInputException(0, menu.getMenuItems().size(), sc);
-
                 if (itemSelect == 0) {
                     System.out.println("메인 메뉴로 돌아갑니다.\n");
                     break;
@@ -70,7 +63,7 @@ public class Kiosk {
                 }
             } catch (Exception e) {
                 System.out.println("잘못된 입력입니다. 숫자를 입력하세요.");
-                sc.next(); // 잘못된 입력을 제거(버퍼 제거?)
+                sc.next(); // 잘못된 입력을 제거(버퍼 제거)
             }
         }
         return input;
