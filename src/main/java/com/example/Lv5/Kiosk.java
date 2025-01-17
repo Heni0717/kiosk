@@ -59,22 +59,20 @@ public class Kiosk {
 
     // 사용자 입력 예외 처리
     private int getInputException(String subject, int max) {
-        int input = sc.nextInt();;
+//        int input = -1;
         while (true) {
-
+            int input=sc.nextInt();
             try {
                 if (input >= 0 && input <= max) {
-                    break;
+                    return input;
                 } else {
-                    System.out.println("잘못된 "+subject+"입력입니다.");
-                    break;
+                    System.out.println("잘못된 "+subject+" 입력입니다.");
                 }
             } catch (Exception e) {
                 System.out.println("잘못된 입력입니다. 숫자를 입력하세요.");
                 sc.next(); // 잘못된 입력을 제거(버퍼 제거?)
             }
         }
-        return input;
     }
 }
 
