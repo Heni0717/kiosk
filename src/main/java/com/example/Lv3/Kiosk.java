@@ -26,7 +26,7 @@ public class Kiosk {
                 MenuItem menu = menuItems.get(i);
                 System.out.println((i + 1) + ". " + menu.name + " | W " + menu.price + " | " + menu.description);
             }
-            System.out.println("0. 종료      | 종료");
+            System.out.println("0. 종료");
 
             // 숫자 입력 받기
             System.out.print("원하는 메뉴 번호 입력: ");

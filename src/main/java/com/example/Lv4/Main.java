@@ -18,22 +18,21 @@ public class Main {
 
         // Menu 클래스 내 있는 List<MenuItem> 에 MenuItem 객체 생성하면서 필드 삽입
         List<MenuItem> burgerMenuItemList = new ArrayList<>(List.of(
-            new MenuItem("햄버거1", 3.0, "첫번째 햄버거.."),
-            new MenuItem("햄버거2", 3.1, "두번째 햄버거.."),
-            new MenuItem("햄버거3", 3.2, "세번째 햄버거.."),
-            new MenuItem("햄버거4", 3.3, "네번째 햄버거..")
+                new MenuItem("ShackBurger", 6.9, "토마토, 양상추, 쉑소스가 토핑된 치즈버거"),
+                new MenuItem("SmokeShack", 8.9, "베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거"),
+                new MenuItem("Cheeseburger", 6.9, "포테이토 번과 비프패티, 치즈가 토핑된 치즈버거"),
+                new MenuItem("Hamburger", 5.4, "비프패티를 기반으로 야채가 들어간 기본버거")
         ));
         List<MenuItem> drinkMenuItemList = new ArrayList<>(List.of(
-                new MenuItem("음료1", 2.0, "첫번째 음료.."),
-                new MenuItem("음료2", 2.1, "두번째 음료.."),
-                new MenuItem("음료3", 2.2, "세번째 음료.."),
-                new MenuItem("음료4", 2.3, "네번째 음료..")
+                new MenuItem("Coke", 2.0, "코카콜라"),
+                new MenuItem("Sprite", 2.0, "스프라이트"),
+                new MenuItem("Fanta", 2.0, "환타")
         ));
         List<MenuItem> dessertMenuItemList = new ArrayList<>(List.of(
-                new MenuItem("디저트1", 1.0, "첫번째 디저트.."),
-                new MenuItem("디저트2", 1.1, "두번째 디저트.."),
-                new MenuItem("디저트3", 1.2, "세번째 디저트.."),
-                new MenuItem("디저트4", 1.3, "네번째 디저트..")
+                new MenuItem("CheeseSticks", 2.5, "막대모양의 치즈 튀김 2개"),
+                new MenuItem("FrenchFries", 1.8, "얇은 막대모양의 감자 튀김"),
+                new MenuItem("Coleslaw", 2.0, "양배추, 당근 등이 들어간 야채 샐러드"),
+                new MenuItem("CheeseBalls", 2.5, "공모양의 치즈 튀김")
         ));
 
         burgerMenu.setMenuItems(burgerMenuItemList);
