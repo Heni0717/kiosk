@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Kiosk {
     // 카테고리  리스트
-    List<Menu> menuList;
+    private List<Menu> menuList;
 
     // main()함수에서 Kiosk를 객체화 시킬 생성자
     public Kiosk(List<Menu> _menuList) {
@@ -50,7 +50,7 @@ public class Kiosk {
                     break;
                 } else {
                     MenuItem selectedItem = menu.getMenuItems().get(itemSelect - 1);
-                    System.out.println("선택한 메뉴: " + selectedItem.name + "\n");
+                    System.out.println("선택한 메뉴: " + selectedItem.getName() + "\n");
                 }
             }
         }

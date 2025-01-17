@@ -8,8 +8,9 @@ import java.util.List;
 public class Menu {
 
     // 필드 : 카테고리, 메뉴 아이템(리스트로 관리)
-    String category;
-    List<MenuItem> menuItems = new ArrayList<>();
+    // 캡슐화
+    private String category;
+    private List<MenuItem> menuItems = new ArrayList<>();
 
     // main()메소드에서 Menu를 객체화시킬 생성자
     public Menu(String _category) {
@@ -30,7 +31,7 @@ public class Menu {
         // 반복문을 활용해 List 안에 있는 MenuItem을 하나씩 출력
         for(int i=0; i<menuItems.size(); i++){
             MenuItem menuItem = menuItems.get(i);
-            System.out.println((i + 1) + ". " + menuItem.name + " | W " + menuItem.price + " | " + menuItem.description);
+            System.out.println((i + 1) + ". " + menuItem.getName() + " | W " + menuItem.getPrice() + " | " + menuItem.getDescription());
         }
         System.out.println("0. 돌아가기");
     }

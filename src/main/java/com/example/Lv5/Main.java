@@ -3,7 +3,8 @@ package com.example.Lv5;
 import java.util.ArrayList;
 import java.util.List;
 
-// Lv4. 객체지향 설계를 적용해 음식메뉴, 주문 내역을 클래스 기반으로 관리
+// Lv5. 각각의 클래스(MenuItem, Menu, Kiosk)의 필드에 직접 접근하지 못하도록 캡슐화
+//  => getter, setter 메소드로 데이터 관리
 public class Main {
     public static void main(String[] args) {
 
