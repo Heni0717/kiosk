@@ -13,11 +13,4 @@ public class MenuItem {
         this.price=price;
         this.description=description;
     }
-
-    // getter를 사용하지 않고 main에서 list 내용을 출력하기 위해 임시 .. 사용..
-    @Override
-    public String toString() {
-        return name + " | W " + price + " | " + description;
-    }
-
 }
