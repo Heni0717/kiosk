@@ -1,11 +1,5 @@
 ![header](https://capsule-render.vercel.app/api?type=transparent&fontColor=F8E0E0&text=Kiosk&height=150&fontSize=60&desc=[Spring%205기]%20CH2%20키오스크%20과제&descAlignY=75&descAlign=50)
 
-<div style="text-align: center; margin-top: 20px;">
-  <img src="https://teamsparta.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F83c75a39-3aba-4ba4-a792-7aefe4b07895%2Fda48b2a0-d015-4244-ba57-82978fef631f%2Fimage.png?table=block&id=17a2dc3e-f514-81d7-9c3d-f6cb03b2b57b&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=760&userId=&cache=v2" width="200" height="150">
-  <a href="https://teamsparta.notion.site/Spring-5-CH-2-17a2dc3ef51480ecac48d9f8a5c5b50a#17a2dc3ef51481c5ae72f45d2adca1fb" style="display: block; font-style: italic;">img 출처</a>
-</div>
-
-
 ### 📑 목차
 - [개요](#개요)
 - [개발 프로세스](#개발-프로세스)
