@@ -1,11 +1,5 @@
 ![header](https://capsule-render.vercel.app/api?type=transparent&fontColor=F8E0E0&text=Kiosk&height=150&fontSize=60&desc=[Spring%205기]%20CH2%20키오스크%20과제&descAlignY=75&descAlign=50)
 
-### 📑 목차
-- [개요](#개요)
-- [개발 프로세스](#개발-프로세스)
-- [필수 기능](#필수-기능)
-- [트러블 슈팅](#트러블-슈팅)
-- [자체 평가](#자체-평가)
 ---
 ### 📜 개요
 **목적** : 자바 문법 실습, 객체지향 개념 적용
